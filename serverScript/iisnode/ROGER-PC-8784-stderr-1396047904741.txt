@@ -1,0 +1,11 @@
+Error: ENOENT, no such file or directory 'C:\Dropbox\Apps\site44\vignyhome.site44.com\test.jsonp'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at Object.getJsonp (C:\Dropbox\Apps\site44\vignyhome.site44.com\serverScript\fileAdmin.js:36:26)
+    at C:\Dropbox\Apps\site44\vignyhome.site44.com\serverScript\server.js:45:27
+    at callbacks (C:\Dropbox\Apps\site44\vignyhome.site44.com\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\Dropbox\Apps\site44\vignyhome.site44.com\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\Dropbox\Apps\site44\vignyhome.site44.com\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (C:\Dropbox\Apps\site44\vignyhome.site44.com\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (C:\Dropbox\Apps\site44\vignyhome.site44.com\node_modules\express\lib\router\index.js:33:10)
+    at next (C:\Dropbox\Apps\site44\vignyhome.site44.com\node_modules\express\node_modules\connect\lib\proto.js:190:15)

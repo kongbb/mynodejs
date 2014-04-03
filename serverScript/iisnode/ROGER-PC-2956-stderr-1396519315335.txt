@@ -1,0 +1,19 @@
+Warning: express.createServer() is deprecated, express
+applications no longer inherit from http.Server,
+please use:
+
+  var express = require("express");
+  var app = express();
+
+SyntaxError: Unexpected token }
+    at Object.parse (native)
+    at IncomingMessage.<anonymous> (C:\Dropbox\code\TechTest\MI9\node_modules\express\node_modules\connect\lib\middleware\json.js:66:27)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:920:16
+    at process._tickCallback (node.js:415:13)
+SyntaxError: Unexpected token }
+    at Object.parse (native)
+    at IncomingMessage.<anonymous> (C:\Dropbox\code\TechTest\MI9\node_modules\express\node_modules\connect\lib\middleware\json.js:66:27)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:920:16
+    at process._tickCallback (node.js:415:13)

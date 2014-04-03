@@ -1,0 +1,66 @@
+ReferenceError: sub is not defined
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:141:37
+    at Array.forEach (native)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:140:23
+    at Array.forEach (native)
+    at getCategories (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:138:22)
+    at Object.getAllCompanyData (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:165:36)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\server.js:38:23
+    at callbacks (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:145:5)
+ReferenceError: sub is not defined
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:141:37
+    at Array.forEach (native)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:140:23
+    at Array.forEach (native)
+    at getCategories (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:138:22)
+    at Object.getAllPersonalData (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:157:37)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\server.js:34:23
+    at callbacks (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:145:5)
+ReferenceError: sub is not defined
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:141:37
+    at Array.forEach (native)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:140:23
+    at Array.forEach (native)
+    at getCategories (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:138:22)
+    at Object.getAllPersonalData (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:157:37)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\server.js:34:23
+    at callbacks (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:145:5)
+ReferenceError: sub is not defined
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:141:37
+    at Array.forEach (native)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:140:23
+    at Array.forEach (native)
+    at getCategories (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:138:22)
+    at Object.getAllCompanyData (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:165:36)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\server.js:38:23
+    at callbacks (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:145:5)
+ReferenceError: sub is not defined
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:141:37
+    at Array.forEach (native)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:140:23
+    at Array.forEach (native)
+    at getCategories (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:138:22)
+    at Object.getAllPersonalData (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:157:37)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\server.js:34:23
+    at callbacks (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:145:5)
+ReferenceError: sub is not defined
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:141:37
+    at Array.forEach (native)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:140:23
+    at Array.forEach (native)
+    at getCategories (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:138:22)
+    at Object.getAllCompanyData (C:\Dropbox\Apps\site44\redesign\serverScript\analytic.js:165:36)
+    at C:\Dropbox\Apps\site44\redesign\serverScript\server.js:38:23
+    at callbacks (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\Dropbox\Apps\site44\redesign\node_modules\express\lib\router\index.js:145:5)

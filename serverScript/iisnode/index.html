@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"ROGER-PC-1640-stderr-1396519126694.txt","computername":"ROGER-PC","pid":1640,"type":"stderr","created":1396519126694},{"file":"ROGER-PC-1964-stderr-1396519446442.txt","computername":"ROGER-PC","pid":1964,"type":"stderr","created":1396519446442},{"file":"ROGER-PC-1992-stderr-1396518623160.txt","computername":"ROGER-PC","pid":1992,"type":"stderr","created":1396518623160},{"file":"ROGER-PC-2428-stderr-1396519063210.txt","computername":"ROGER-PC","pid":2428,"type":"stderr","created":1396519063210},{"file":"ROGER-PC-2824-stderr-1396518470045.txt","computername":"ROGER-PC","pid":2824,"type":"stderr","created":1396518470045},{"file":"ROGER-PC-2956-stderr-1396519315335.txt","computername":"ROGER-PC","pid":2956,"type":"stderr","created":1396519315335},{"file":"ROGER-PC-3124-stderr-1396520080815.txt","computername":"ROGER-PC","pid":3124,"type":"stderr","created":1396520080815},{"file":"ROGER-PC-3216-stderr-1383166691125.txt","computername":"ROGER-PC","pid":3216,"type":"stderr","created":1383166691125},{"file":"ROGER-PC-3264-stderr-1396519428960.txt","computername":"ROGER-PC","pid":3264,"type":"stderr","created":1396519428960},{"file":"ROGER-PC-4712-stderr-1396519712486.txt","computername":"ROGER-PC","pid":4712,"type":"stderr","created":1396519712486},{"file":"ROGER-PC-5080-stderr-1396519831845.txt","computername":"ROGER-PC","pid":5080,"type":"stderr","created":1396519831845},{"file":"ROGER-PC-5564-stderr-1396518963299.txt","computername":"ROGER-PC","pid":5564,"type":"stderr","created":1396518963299},{"file":"ROGER-PC-5604-stderr-1396519617912.txt","computername":"ROGER-PC","pid":5604,"type":"stderr","created":1396519617912},{"file":"ROGER-PC-5844-stderr-1396519394306.txt","computername":"ROGER-PC","pid":5844,"type":"stderr","created":1396519394306},{"file":"ROGER-PC-6140-stderr-1396519683956.txt","computername":"ROGER-PC","pid":6140,"type":"stderr","created":1396519683956},{"file":"ROGER-PC-6188-stderr-1396518357762.txt","computername":"ROGER-PC","pid":6188,"type":"stderr","created":1396518357762},{"file":"ROGER-PC-6188-stdout-1396518357746.txt","computername":"ROGER-PC","pid":6188,"type":"stdout","created":1396518357746},{"file":"ROGER-PC-6204-stderr-1396519846979.txt","computername":"ROGER-PC","pid":6204,"type":"stderr","created":1396519846979},{"file":"ROGER-PC-6996-stderr-1396520051551.txt","computername":"ROGER-PC","pid":6996,"type":"stderr","created":1396520051551},{"file":"ROGER-PC-7016-stderr-1396519804547.txt","computername":"ROGER-PC","pid":7016,"type":"stderr","created":1396519804547},{"file":"ROGER-PC-8784-stderr-1396047904741.txt","computername":"ROGER-PC","pid":8784,"type":"stderr","created":1396047904741}];
+        var lastUpdated = 1396520080876;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

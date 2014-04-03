@@ -1,0 +1,18 @@
+Warning: express.createServer() is deprecated, express
+applications no longer inherit from http.Server,
+please use:
+
+  var express = require("express");
+  var app = express();
+
+TypeError: Cannot read property 'image' of undefined
+    at C:\Dropbox\code\TechTest\MI9\serverScript\analytic.js:182:24
+    at Array.forEach (native)
+    at Object.getTestData (C:\Dropbox\code\TechTest\MI9\serverScript\analytic.js:179:21)
+    at app.post.dataString (C:\Dropbox\code\TechTest\MI9\serverScript\server.js:33:28)
+    at callbacks (C:\Dropbox\code\TechTest\MI9\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\Dropbox\code\TechTest\MI9\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\Dropbox\code\TechTest\MI9\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (C:\Dropbox\code\TechTest\MI9\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (C:\Dropbox\code\TechTest\MI9\node_modules\express\lib\router\index.js:33:10)
+    at next (C:\Dropbox\code\TechTest\MI9\node_modules\express\node_modules\connect\lib\proto.js:190:15)
